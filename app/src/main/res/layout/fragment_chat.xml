@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mega.wsstatusdownloader.ChatFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+  <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="20dp"
+      android:text="Direct-Chat"
+      android:fontFamily="@font/product_sans_bold"
+      android:textColor="@color/colorAccent"
+      android:gravity="center_horizontal"
+      android:textSize="25dp"
+      >
+
+  </TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="10dp"
+            android:fontFamily="@font/product_sans_bold"
+            android:layout_marginEnd="10dp"
+            android:textSize="17dp"
+            android:text="Chat with someone without having their phone number saved in your phone's address book. As long as you know this person's phone number, you ccan create a link that will allow you to start a chat with them."
+            android:gravity="center_horizontal">
+
+        </TextView>
+
+        <com.hbb20.CountryCodePicker
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/countryCode"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            >
+
+        </com.hbb20.CountryCodePicker>
+
+        <EditText
+            android:id="@+id/phoneNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="30dp"
+            android:ems="10"
+            android:hint="Mobile No"
+            android:inputType="phone"
+            android:minHeight="48dp" />
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/message"
+            android:layout_marginHorizontal="16dp"
+            android:ems="10"
+            android:inputType="text"
+            android:hint="Message"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_marginTop="30dp"
+            android:id="@+id/send"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="SEND"
+            android:fontFamily="@font/product_sans_bold"
+            android:textColor="@color/white"
+            />
+
+
+
+
+    </LinearLayout>
+
+
+
+
+</FrameLayout>
